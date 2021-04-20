@@ -18,6 +18,100 @@ ul li {
   list-style: none;
 }
 
+/* ===========
+Header Section
+=========== */
+header {
+  background-color: #222222;
+  padding: 10px 0;
+}
+
+.top-menubar {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.top-menubar li {
+  position: relative;
+  display: inline;
+  margin-left: 25px;
+}
+
+.top-menubar li::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  width: 2px;
+  background-color: #b6b6b6;
+  height: 85%;
+}
+
+.top-menubar li:last-child::after {
+  display: none;
+}
+
+.top-menubar li a {
+  text-decoration: none;
+  color: #b6b6b6;
+  transition: 0.3s ease-in-out;
+}
+
+.top-menubar li a:hover {
+  color: #f10e34;
+}
+
+.bottom-bar {
+  margin-top: 10px;
+}
+
+/* Search bar */
+.search-bar .input-group {
+  margin-top: 10px;
+}
+
+.search-bar .input-group .btn-outline-secondary {
+  width: 65px;
+  background-color: #f10e34;
+  border: 0;
+}
+
+.search-bar .input-group .btn-outline-secondary:focus, .search-bar .input-group .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.search-bar .input-group .btn-outline-secondary i {
+  color: #b6b6b6;
+}
+
+/* Cart Details */
+.cart-details {
+  margin-top: 10px;
+}
+
+.cart-details .fa-shopping-cart {
+  color: #fff;
+  background-color: #f10e34;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  float: right;
+}
+
+.cart-details h4 {
+  color: #b6b6b6;
+  font-size: 18px;
+}
+
+.cart-details h4 span {
+  display: block;
+}
+
 /* =============
 Sponsors Section
 ============= */
@@ -44,23 +138,23 @@ Contact Section
 .contact-section ul li {
   color: #b6b6b6;
   margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .contact-section ul li:hover {
   color: #fff;
   transform: scale(1.1);
   padding-left: 10px;
-  transition: 0.4s ease-in-out;
 }
 
 .contact-section ul li i {
   color: #f10e34;
   padding-right: 15px;
+  transition: 0.3s ease-in-out;
 }
 
 .contact-section ul li i:hover {
   color: #b6b6b6;
-  transition: 0.5s ease-in-out;
 }
 
 .contact-section h2 {
@@ -99,11 +193,11 @@ footer ul li {
   display: inline;
   color: #b6b6b6;
   margin-right: 25px;
+  transition: 0.3s ease-in-out;
 }
 
 footer ul li:hover {
   color: #f10e34;
-  transition: 0.5s ease-in-out;
 }
 
 footer ul li i {
