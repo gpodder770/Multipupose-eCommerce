@@ -119,6 +119,11 @@ Sponsors Section
   background-color: #f10e34;
 }
 
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
 /* ============
 Contact Section
 ============ */
