@@ -79,7 +79,7 @@ header {
 
 .search-bar .input-group .btn-outline-secondary:focus, .search-bar .input-group .form-control:focus {
   box-shadow: none;
-  border-color: transparent;
+  border-color: #fff;
 }
 
 .search-bar .input-group .btn-outline-secondary i {
