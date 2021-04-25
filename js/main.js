@@ -52,7 +52,7 @@ $(document).ready(function() {
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
     navSpeed: 1500,
@@ -71,6 +71,14 @@ $(document).ready(function() {
     }
   })
 
+  // Both row moves with one button
+  var o1 = $('.first-slider'), o2 = $('.second-slider');
+    o1.on('click', '.owl-next', function () {
+      o2.trigger('next.owl.carousel')
+  });
+  o1.on('click', '.owl-prev', function () {
+      o2.trigger('prev.owl.carousel')
+  })
 
   // Sponsors
   $('.sponsors-slider').owlCarousel({
@@ -92,4 +100,6 @@ $(document).ready(function() {
       }
     }
   })
+
+
 })
