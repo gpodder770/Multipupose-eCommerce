@@ -99,9 +99,16 @@ header {
 }
 
 .search-bar .input-group .btn-outline-secondary {
-  width: 65px;
   background-color: #f10e34;
   border: 0;
+}
+
+.search-bar .input-group .btn-outline-secondary:hover {
+  background-color: #ffc808;
+}
+
+.search-bar .input-group .btn-outline-secondary:hover i {
+  color: #333333;
 }
 
 .search-bar .btn-outline-secondary:focus, .search-bar .form-control:focus {
@@ -111,7 +118,7 @@ header {
 }
 
 .search-bar .input-group .btn-outline-secondary i {
-  color: #b6b6b6;
+  color: #fff;
 }
 
 /* Cart Details */
@@ -309,7 +316,7 @@ Products Section
 
 .newsletters .form-control:focus {
   box-shadow: 0 0 0 0;
-  border: 0;
+  border-color: black;
 }
 
 .newsletters .btn-newsletters {
@@ -341,16 +348,22 @@ Products Section
   right: 150px;
 }
 
+.new_latest_featured_products .links li {
+  margin-left: 30px;
+}
+
 .new_latest_featured_products .links a {
   font-size: 18px;
   color: black;
-  margin-left: 15px;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.4s ease-in-out;
 }
 
 .new_latest_featured_products .links a:hover {
-  color: #f10e34;
+  background-color: #f10e34;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #fff;
 }
 
 .new_latest_featured_products .hr-line {
@@ -399,6 +412,15 @@ Products Section
 .new_latest_featured_products ul li {
   display: inline;
   color: #ffc808;
+}
+
+/* Sale Products */
+.sale-section {
+  margin-top: 30px;
+}
+
+.sale-section .sale-text {
+  background-color: #fff;
 }
 
 /* Latest Products */
@@ -499,6 +521,10 @@ Contact Section
   color: #fff;
 }
 
+.contact-section ul li a:hover i {
+  color: #ffc808;
+}
+
 .contact-section ul li i {
   color: #f10e34;
   padding-right: 15px;
@@ -519,9 +545,14 @@ Contact Section
 .contact-section .payment ul li {
   display: inline;
   font-size: 40px;
+  margin-right: 15px;
 }
 
-.contact-section .payment i:hover {
+.contact-section .payment ul li i {
+  padding: 0;
+}
+
+.contact-section .payment ul li:hover i {
   color: #ffc808;
 }
 

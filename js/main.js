@@ -7,9 +7,8 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
-    navSpeed: 1500,
     dots: false,
-    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
     responsive: {
       0: {
         items: 1
@@ -31,9 +30,8 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
-    navSpeed: 1500,
     dots: false,
-    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
     responsive: {
       0: {
         items: 1
@@ -55,9 +53,8 @@ $(document).ready(function() {
     autoplay: false,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
-    navSpeed: 1500,
     dots: false,
-    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
     responsive: {
       0: {
         items: 1
@@ -72,12 +69,13 @@ $(document).ready(function() {
   })
 
   // Both row moves with one button
-  var o1 = $('.first-slider'), o2 = $('.second-slider');
-    o1.on('click', '.owl-next', function () {
-      o2.trigger('next.owl.carousel')
+  var o1 = $('.first-slider'),
+    o2 = $('.second-slider');
+  o1.on('click', '.owl-next', function() {
+    o2.trigger('next.owl.carousel')
   });
-  o1.on('click', '.owl-prev', function () {
-      o2.trigger('prev.owl.carousel')
+  o1.on('click', '.owl-prev', function() {
+    o2.trigger('prev.owl.carousel')
   })
 
   // Sponsors
@@ -100,6 +98,5 @@ $(document).ready(function() {
       }
     }
   })
-
 
 })
