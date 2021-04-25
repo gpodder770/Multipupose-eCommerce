@@ -50,7 +50,7 @@ $(document).ready(function() {
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
     dots: false,
